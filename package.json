@@ -27,6 +27,7 @@
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
+    "@types/node": "^6.0.52",
     "angular2-template-loader": "^0.6.0",
     "browser-sync": "^2.18.5",
     "browser-sync-webpack-plugin": "^1.1.3",

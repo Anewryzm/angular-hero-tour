@@ -1,1 +1,1 @@
-declare function require(id:string):any;
+/// <reference path="./../node_modules/@types/node/index.d.ts" />

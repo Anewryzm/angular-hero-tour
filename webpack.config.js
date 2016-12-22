@@ -33,5 +33,8 @@ module.exports = {
       reload: false
     }),
     new ExtractTextPlugin('[name].css')
-  ]
+  ],
+  devServer: {
+    historyApiFallback: true,
+  }
 };

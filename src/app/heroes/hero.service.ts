@@ -31,4 +31,16 @@ export class HeroService{
       .then(responde => responde.json().data as Hero)
       .catch(this.handleError);
   }
+
+  private headers = new Headers({'Content-Type':'application/json'});
+
+  update(hero: Hero): Promise<Hero>{
+    const url = `${this.heroesUrl}/${hero.id}`;
+    return this.http
+      .put(url, JSON.stringify(hero), {headers: this.headers})
+      .toPromise()
+      .then(()=>hero)
+      .catch(this.handleError);
+  }
+
 }

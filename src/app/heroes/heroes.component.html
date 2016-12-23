@@ -5,6 +5,12 @@
   </li>
 </ul>
 
+<div>
+  <label>Hero name:</label>
+  <input #heroName>
+  <button (click)="add(heroName.value); heroName.value=''" >Add</button>
+</div>
+
 <hr>
 <div *ngIf="selectedHero">
   <h2>
